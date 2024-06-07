@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    background-color: #7acf72;
+    /* Cor de fundo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 2px solid #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Logo da XiCão */
+nav h1 {
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 29px;
+    text-decoration: none;
+}
+
+/* Estilos para a lista de itens de navegação */
+nav ul {
+    list-style-type: none;
+    /* Remove os marcadores padrão da lista */
+    display: flex;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav li {
+    margin-left: 25px;
+    display: flex; /* Adiciona display flex para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    
+}
+
+/* Estilos para os links na lista de navegação */
+nav li a {
+    color: white;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+    border-radius: 100%;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Estilos para os icones na barra de navegação */
+.icones_navbar .fas {
+    font-size: 21px;
+}
+
+.btn-login{
+    margin-left: 90px;
+}
+
+.btn-login .fas{
+    font-size: 13px;
+}
+
+/* Estilo para o contêiner da barra de pesquisa */
+.search-container {
+    display: flex;
+    width: 700px; /* Ajuste conforme necessário */
+    margin: 20px auto; /* Centralizar no meio da página */
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input{
+    color: #fff;
+}
+
+.search-container input::placeholder {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Posicionando à direita com 10px de espaço */
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+#search-input {
+    padding-right: 30px; /* Ajustando o padding para garantir que o texto não fique sob o ícone */
+}
+
+
+/* Estilo para o campo de entrada de texto */
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 16px; /* Arredondar todas as bordas */
+    outline: none; /* Remover a borda de foco */
+    background: #ffffff31;
+}
+
+nav button {
+    border: 2px solid #ffffff;
+    padding: 8px 15px;
+    background: none;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto verticalmente ao centro */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves para os efeitos de hover */
+}
+
+nav button i {
+    margin-right: 8px;
+}
+
+nav button:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+/* Ajustes adicionais para o botão de login */
+nav .btn-login {
+    margin-left: 40px; /* Ajusta a margem esquerda */
+}
+
+nav .btn-login:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+
+/* ABAIXO DA BARRA DE NAVEGAÇÃO */
+
+/* Estilos para a div de links */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #272727;
+    min-height: 70px; /* Alterado para min-height */
+    margin-top: auto;
+    margin-bottom: auto;
+    border-bottom: 2px solid #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.links li {
+    margin-top: 10px;
+    display: inline-block;
+    margin: 0 30px; /* Adapte a margem conforme necessário */
+    align-items: center;
+}
+
+.links li a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff; /* Cor dos links */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.links li a:hover {
+    bottom: 10px;
+    border: 1.2px solid #ffffff; /* Borda quando hover */
+    border-radius: 12px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo ligeiramente mais claro */
+    padding: 8px 8px;
+}
+
+.links li a:not(:hover) {
+    border: none;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+/* conteudo principal*/
+
+/* Estilos para as apresentações */
+.apresentação {
+    background: #7acf72;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.auau{
+    margin-top: 20px;
+}
+
+/* Estilos para as categorias */
+.auau, .miau, .roed, .asas {
+    background: #00000081;
+    border: 2px solid #4cae4c;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 95%; /* Ocupa 100% da largura do container pai */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    border-radius: 24px;
+}
+
+/* Estilos para o container de produtos */
+.produtos {
+    display: flex;
+    flex-direction: column; /* Faz com que as divs das categorias fiquem uma abaixo da outra */
+    align-items: center; /* Centraliza as divs das categorias horizontalmente */
+    gap: 20px; /* Adiciona um espaço entre as categorias */
+    background: #272727;
+}
+
+/* Estilos para os anúncios */
+.anuncios {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Adiciona um espaço de 20px entre cada imagem */
+}
+
+/* Estilos para as imagens dos produtos */
+.produtos img {
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 25px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease-in-out;
+}
+
+.produtos img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+
+/* RODAPÉ*/
+.rodape {
+    background-color: #5a5a5a;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    width: 100%;
+    margin-left: 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.rodape h4 {
+    color: #ffffff;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+.rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.rodape ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rodape ul li a:hover {
+    color: #007bff;
+}
+
+.rodape .copyright {
+    font-size: 14px;
+    color: #ffffff;
+}

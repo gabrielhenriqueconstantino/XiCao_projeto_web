@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XiCão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="./indexIMG/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- barra de navegação -->
+<nav>
+    <a href="index.html"><h1>XiCão <i class="fas fa-paw"></i></h1></a>
+    
+    <div class="search-container">
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+        <input id="search-input" type="text" placeholder="Para seu pet, sua casa...">
+    </div>
+
+    <ul class="icones_navbar">
+        <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#contato" title="Informações"><i class="fas fa-info-circle"></i></a></li>
+        <li><a href="#contato" title="Contato"><i class="fas fa-phone"></i></a></li>
+        <li><a href="#" title="Sacola"><i class="fas fa-shopping-bag"></i></a></li>
+        <button class="btn-login"><i class="fas fa-user"></i>Login <br>Cadastre-se</button>
+    </ul>
+</nav>
+
+<!-- links abaixo da navbar -->
+
+<div class="links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="xicao_vip.html">XICÃO VIP</a></li>
+    <li><a href="produtos.html">PRODUTOS</a></li>
+    <li><a href="adote.html">ADOTE</a></li>
+    <li><a href="banho_tosa.html">BANHO & TOSA</a></li>
+    <li><a href="vacinas.html">VACINAS</a></li>
+    <li><a href="delivery.html">DELIVERY</a></li>
+    <li><a href="semana_pet">SEMANA DO PET</a></li>
+</div>
+
+<!-- aba de produtos -->
+
+<div class="produtos">
+    <div class="anuncios">
+        <img src="./indexIMG/Anúncio Ração.png">
+        <img src="./indexIMG/Anúncio Cama Pet.png">
+        <img src="./indexIMG/Anúncio Guia.png">
+        <img src="./indexIMG/Anúncio Alpiste.png">
+    </div>
+
+    <div class="anuncios2">
+        <img src="./indexIMG/Whiska.jpg">
+        <img src="./indexIMG/Ração Roedor.jpg">
+        <img src="./indexIMG/Bolinhas.jpg">
+        <img src="./indexIMG/Areia.jpg">
+    </div>
+</div>
+
+<!-- semana pet e adoção -->
+
+<div class="adocao">
+    <img src="./indexIMG/gif.gif" alt="">
+</div>
+
+<!-- botões -->
+
+<div class="botoes">
+    <div class="app">
+        <button>
+            <strong>APLICATIVO XICÃO<br>instale agora!</strong>
+            <i class="fas fa-mobile-alt icone-mobile"></i>
+        </button>
+    </div>
+
+    <div class="cupons">
+        <button>
+            <strong>CUPONS<br>incríveis descontos</strong>
+            <i class="fas fa-tag icone-cupom"></i>
+        </button>
+    </div>
+
+    <div class="cuidados">
+        <button>
+            <strong>CUIDADOS<br>saúde do seu pet</strong>
+            <i class="fas fa-plus-circle icone-cuidados"></i>
+        </button>
+    </div>
+
+    <div class="adote">
+        <button>
+            <strong>ADOÇÃO<br>encontre um amigo!</strong>
+            <i class="fas fa-heart icone-coração"></i>
+        </button>
+    </div>
+</div>
+
+<!-- artigos da chicão -->
+
+<div class="artigos">
+    <h3 class="explica">A XiCão explica!</h3>
+    <p>Uma seção repleta de informações atuais e elaboradas por quem entende do assunto.</p>
+    <img src="./indexIMG/Vacinas.jpg" alt="">
+    <img src="./indexIMG/Artigos.jpg" alt="">
+</div>
+
+<!-- cães, gatos, roedores, aves... -->
+
+<div class="animais">
+    <h3>Cuidamos com amor de cada patinha que entra pela porta, <br> 
+        tornando a felicidade dos pets e seus tutores nossa missão!</h3>
+
+    <a href="produtos.html#miau"><img src="./indexIMG/GATOS.png" alt="Gatos"></a>
+    <a href="produtos.html#auau"><img src="./indexIMG/CÃES.png" alt="Cães"></a>
+    <a href="produtos.html#roed"><img src="./indexIMG/ROEDORES.png" alt="Roedores"></a>
+    <a href="produtos.html#asas"><img src="./indexIMG/AVES.png" alt="Aves"></a>
+</div>
+
+<!-- newsletter -->
+
+<div class="newsletter">
+    <h2>Assine a nossa Newsletter e receba novas ofertas exclusivas<br>TODOS OS DIAS!</h2>
+    <div class="form-container">
+        <form action="/submit_newsletter" method="POST">
+            <div class="input-container">
+                <input placeholder="Nome" type="text" id="name" name="name" required>
+                <i class="fas fa-user"> </i>
+            </div>
+            <div class="input-container">
+                <input placeholder="E-mail" type="email" id="email" name="email" required>
+                <i class="fas fa-envelope"> </i>
+            </div>
+            <button type="submit" value="Assinar">Assinar</button>
+        </form>
+    </div>
+    <img src="./indexIMG/homem_com_gato-removebg.png" alt="Homem com Gato" class="cat">
+</div>
+
+<!-- rodapé da página -->
+
+<footer class="rodape">
+    <div class="conteudo-rodape">
+        <h4>Contato</h4>
+        <p>Endereço: Av. dos Pets Felizes, 1234</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Email: contato@xicao.com</p>
+    </div>
+    <div class="redes-sociais">
+        <h4>Redes Sociais</h4>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 XiCão. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- coded with love -->
+
+<div class="coded-with-love">
+    <p>Coded with love by:</p>
+    <ul>
+        <li><a href="https://github.com">Gabriella Lisboa</a></li>
+        <li><a href="https://github.com">Gabriel Constantino</a></li>
+        <li><a href="https://github.com">Giovanna Antunes</a></li>
+        <li><a href="https://github.com">Giovanni Padilha</a></li>
+        <li><a href="https://github.com">Guilherme Henrique</a></li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
