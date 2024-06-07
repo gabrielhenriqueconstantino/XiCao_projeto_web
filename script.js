@@ -66,6 +66,20 @@ imgs.forEach(img => {
     });
 });
 
+//confirma que está "tudo certo" após o envio do formulário da newsletter
+
+document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Evita o envio padrão do formulário
+
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+
+                window.location.href = "tudo_certo.html";
+            });
+        });
+
 
 
 
