@@ -748,5 +748,51 @@ nav .btn-login:hover {
     color: #007bff;
 }
 
+/* tela de login (login.html e cadastro.html*/
+
+.login-container {
+    background-color: #7acf72;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Defina uma largura fixa para o container */
+    margin: 0 auto; /* Centralize o container na página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%; /* Faça os inputs ocuparem toda a largura do container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garanta que o padding não afete a largura total */
+}
+
+.login-container input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 0; /* Ajuste o padding vertical para alinhar com os outros inputs */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 
 
